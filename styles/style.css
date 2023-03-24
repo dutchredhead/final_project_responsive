@@ -1,0 +1,18 @@
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
