@@ -9,6 +9,7 @@
 h1 {
   font-family: var(--main-font);
   font-size: 100px;
+  color: var(--second-color);
 }
 
 h2 {
@@ -31,4 +32,5 @@ h2 {
   margin: 35px;
   padding: 10px 15px;
   font-size: 20px;
+  font-family: var(--body-font);
 }
