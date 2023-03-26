@@ -6,15 +6,20 @@
   --body-font: "Roboto", sans-serif;
 }
 
+body {
+  background-color: var(--third-color);
+}
+
 h1 {
   font-family: var(--main-font);
   font-size: 100px;
-  color: var(--second-color);
+  color: var(--main-color);
 }
 
 h2 {
   font-family: var(--body-font);
   margin: -10px;
+  color: var(--third-color);
 }
 
 .main {
@@ -33,4 +38,134 @@ h2 {
   padding: 10px 15px;
   font-size: 20px;
   font-family: var(--body-font);
+}
+
+.main-button:hover {
+  background-color: var(--second-color);
+}
+
+.main-photo {
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+  padding-top: 100px;
+  background: var(--second-color);
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: var(--third-color);
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: var(--second-color);
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+.content-home {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.styling {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.fotos {
+  margin-bottom: 30px;
+}
+
+.column {
+  display: inline-block;
+  text-align: center;
+}
+
+figure {
+  overflow: hidden;
+}
+
+a p {
+  color: black;
+  margin-top: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.column img {
+  display: block;
+  width: 90%;
+  margin-bottom: 5vh;
+}
+
+/*With Simple Caption*/
+.column#caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column#caption .text {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(0%, 70%); */
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+  display: flex;
+  margin-top: -5vh;
+}
+.column#caption .text h1 {
+  margin: 0;
+  color: black;
+  font-size: 30px;
+}
+.column#caption:hover .text {
+  opacity: 1;
+}
+.column#caption:hover img {
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 760px) {
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
 }
