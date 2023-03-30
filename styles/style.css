@@ -47,7 +47,7 @@ h3 {
 }
 
 .main-button:hover {
-  background-color: var(--second-color);
+  background-color: var(--third-color);
 }
 
 .second-button {
@@ -230,6 +230,10 @@ a:hover {
 .align {
   display: flex;
   justify-content: center;
+}
+
+.navbar {
+  background-color: var(--main-color) !important;
 }
 
 @media only screen and (max-width: 768px) {
