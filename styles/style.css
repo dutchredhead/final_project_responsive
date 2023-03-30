@@ -177,7 +177,16 @@ a:hover {
   align-items: flex-start;
 }
 
-@media only screen and (max-width: 760px) {
+.about-image {
+  width: 90%;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
   .row {
     margin-left: 10px;
     margin-right: 10px;
@@ -185,5 +194,18 @@ a:hover {
 
   h1 {
     font-size: 80px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .center-text {
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
   }
 }
