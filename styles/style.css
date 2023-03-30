@@ -209,7 +209,12 @@ a:hover {
   justify-content: flex-end;
 }
 
-i {
+.footer-size {
+  font-size: 50px;
+  margin: 20px;
+}
+
+.size {
   font-size: 80px;
   margin: 30px;
 }
@@ -224,7 +229,7 @@ a {
 }
 
 a:hover {
-  color: var(--second-color);
+  color: #fff;
 }
 
 .align {
@@ -234,6 +239,12 @@ a:hover {
 
 .navbar {
   background-color: var(--main-color) !important;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--second-color);
+  padding-top: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -268,7 +279,7 @@ a:hover {
     width: 70%;
   }
 
-  i {
+  .size {
     font-size: 55px;
   }
 }
