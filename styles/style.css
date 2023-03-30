@@ -282,4 +282,8 @@ footer {
   .size {
     font-size: 55px;
   }
+
+  .footer-size {
+    font-size: 30px;
+  }
 }
