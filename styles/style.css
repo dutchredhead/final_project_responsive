@@ -44,7 +44,18 @@ h2 {
   background-color: var(--second-color);
 }
 
-.main-photo {
+.second-button {
+  background-color: none;
+  border: 3px solid var(--main-color);
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: var(--second-color);
+  font-family: var(--body-font);
+}
+
+.second-button:hover {
+  background-color: var(--second-color);
 }
 
 section {
@@ -59,7 +70,7 @@ section {
 
 .curve {
   position: absolute;
-  height: 250px;
+  height: 150px;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -157,6 +168,13 @@ a:hover {
 }
 .column#caption:hover img {
   opacity: 0.3;
+}
+
+.center-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 760px) {
